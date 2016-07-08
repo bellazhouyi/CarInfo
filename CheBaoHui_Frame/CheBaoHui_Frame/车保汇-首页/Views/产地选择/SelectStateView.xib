@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SelectStateView">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjj-Kw-BRg">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="dcx-S7-Wcj"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem title="取消" width="152" id="reN-76-lFq">
+                            <connections>
+                                <action selector="actionCancel:" destination="iN0-l3-epB" id="XUv-pn-EmL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="确定" width="233" id="Snz-nW-H0r">
+                            <connections>
+                                <action selector="actionDone:" destination="iN0-l3-epB" id="eqj-pe-Ej7"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <pickerView contentMode="scaleToFill" showsSelectionIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auV-hi-xpj">
+                    <rect key="frame" x="0.0" y="44" width="375" height="76"/>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yjj-Kw-BRg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ObJ-cc-mgO"/>
+                <constraint firstAttribute="trailing" secondItem="auV-hi-xpj" secondAttribute="trailing" constant="25" id="ZMd-Ip-W5K"/>
+                <constraint firstAttribute="bottom" secondItem="auV-hi-xpj" secondAttribute="bottom" id="eig-ZU-i8m"/>
+                <constraint firstAttribute="trailing" secondItem="yjj-Kw-BRg" secondAttribute="trailing" id="gqp-37-rGl"/>
+                <constraint firstItem="yjj-Kw-BRg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iyy-12-BKy"/>
+                <constraint firstItem="auV-hi-xpj" firstAttribute="top" secondItem="yjj-Kw-BRg" secondAttribute="bottom" id="sSA-sI-gAP"/>
+                <constraint firstItem="auV-hi-xpj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uMr-AC-yBu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="customPicker" destination="auV-hi-xpj" id="I3z-BP-27p"/>
+                <outlet property="toolbarCancelDone" destination="yjj-Kw-BRg" id="upg-C8-eCc"/>
+            </connections>
+            <point key="canvasLocation" x="221" y="20"/>
+        </view>
+    </objects>
+</document>

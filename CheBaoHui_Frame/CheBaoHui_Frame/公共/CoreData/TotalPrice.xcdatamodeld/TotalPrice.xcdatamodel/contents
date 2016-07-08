@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 7.0">
+    <entity name="TotalPrice" representedClassName="TotalPrice" syncable="YES">
+        <attribute name="cjh_no" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cntr_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cz_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cz_phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jqxBeginTIme" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="syxBeginTIme" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalPrice" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TotalPrice" positionX="-63" positionY="-18" width="128" height="150"/>
+    </elements>
+</model>

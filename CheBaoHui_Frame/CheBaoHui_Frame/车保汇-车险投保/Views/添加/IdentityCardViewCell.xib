@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IdentityCardViewCell" rowHeight="99" id="KGk-i7-Jjw" customClass="IdentityCardViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请按照提示上传身份证" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oae-1H-Pjq">
+                        <rect key="frame" x="97" y="12" width="142" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9qR-eH-Rkr"/>
+                            <constraint firstAttribute="width" constant="142" id="pIu-NU-CCT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bF8-Wu-E9t">
+                        <rect key="frame" x="169" y="39" width="138" height="100"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="idCardReverseClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wFQ-fy-lvs"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOU-SC-U3m">
+                        <rect key="frame" x="11" y="39" width="138" height="100"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="idCardPositiveClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="LWD-RR-JwG"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车主身份证" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dM2-9K-p5K">
+                        <rect key="frame" x="10" y="10" width="87" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="87" id="K3n-g1-Xa6"/>
+                            <constraint firstAttribute="height" constant="21" id="ZuB-f7-F7c"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.13160089159999999" green="0.55666683689999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bF8-Wu-E9t" firstAttribute="top" secondItem="FOU-SC-U3m" secondAttribute="top" id="2ij-wJ-NRn"/>
+                    <constraint firstItem="dM2-9K-p5K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="2oI-FX-mKv"/>
+                    <constraint firstItem="FOU-SC-U3m" firstAttribute="width" secondItem="bF8-Wu-E9t" secondAttribute="width" id="9R4-RT-Bgg"/>
+                    <constraint firstItem="FOU-SC-U3m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="3" id="Exk-hF-c11"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="bF8-Wu-E9t" secondAttribute="trailing" constant="5" id="JUg-0I-Neo"/>
+                    <constraint firstItem="dM2-9K-p5K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="Nmy-DD-C8l"/>
+                    <constraint firstItem="bF8-Wu-E9t" firstAttribute="baseline" secondItem="FOU-SC-U3m" secondAttribute="baseline" id="Ofl-vh-0vz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="bF8-Wu-E9t" secondAttribute="bottom" constant="2.5" id="Tec-0O-0Ls"/>
+                    <constraint firstItem="bF8-Wu-E9t" firstAttribute="top" secondItem="oae-1H-Pjq" secondAttribute="bottom" constant="6" id="UM3-sJ-McO"/>
+                    <constraint firstItem="bF8-Wu-E9t" firstAttribute="leading" secondItem="FOU-SC-U3m" secondAttribute="trailing" constant="20" id="VPY-hj-KMn"/>
+                    <constraint firstItem="FOU-SC-U3m" firstAttribute="height" secondItem="bF8-Wu-E9t" secondAttribute="height" id="hNV-hl-zFt"/>
+                    <constraint firstItem="oae-1H-Pjq" firstAttribute="leading" secondItem="dM2-9K-p5K" secondAttribute="trailing" id="qkD-P4-pt1"/>
+                    <constraint firstItem="bF8-Wu-E9t" firstAttribute="firstBaseline" secondItem="FOU-SC-U3m" secondAttribute="firstBaseline" id="w7T-B0-jcL"/>
+                    <constraint firstItem="oae-1H-Pjq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="zb0-xp-AwB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftLabel" destination="dM2-9K-p5K" id="eva-O9-tJj"/>
+                <outlet property="particularLabel" destination="oae-1H-Pjq" id="kYT-fa-0VP"/>
+                <outlet property="positiveUIButton" destination="FOU-SC-U3m" id="Ctf-0G-RHn"/>
+                <outlet property="reverseButton" destination="bF8-Wu-E9t" id="4mH-eG-aNM"/>
+            </connections>
+            <point key="canvasLocation" x="423" y="287"/>
+        </tableViewCell>
+    </objects>
+</document>

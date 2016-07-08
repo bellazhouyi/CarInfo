@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="24" id="KGk-i7-Jjw" customClass="BasicCell">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="404" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Meg-xH-hMw">
+                        <rect key="frame" x="8" y="13" width="24" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="j3y-Qf-kM9"/>
+                            <constraint firstAttribute="width" secondItem="Meg-xH-hMw" secondAttribute="height" multiplier="8:9" id="jyD-Id-YvG"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="check_box_checked.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投保" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hWd-Gd-i0I">
+                        <rect key="frame" x="266" y="13" width="30" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4gs-BJ-um4">
+                        <rect key="frame" x="42" y="13" width="42" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="Meg-xH-hMw" secondAttribute="leading" id="3x3-Bh-P03"/>
+                    <constraint firstItem="4gs-BJ-um4" firstAttribute="bottom" secondItem="Meg-xH-hMw" secondAttribute="bottom" id="AsX-lo-erR"/>
+                    <constraint firstItem="Meg-xH-hMw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="Wp1-f4-lPu"/>
+                    <constraint firstItem="4gs-BJ-um4" firstAttribute="leading" secondItem="Meg-xH-hMw" secondAttribute="trailing" constant="10" id="bPF-3j-wMw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hWd-Gd-i0I" secondAttribute="trailing" constant="100" id="hYc-bh-V77"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Meg-xH-hMw" secondAttribute="bottom" constant="2" id="qhs-6F-dA7"/>
+                    <constraint firstItem="hWd-Gd-i0I" firstAttribute="top" secondItem="4gs-BJ-um4" secondAttribute="top" id="rSI-lZ-bvs"/>
+                    <constraint firstItem="4gs-BJ-um4" firstAttribute="top" secondItem="Meg-xH-hMw" secondAttribute="top" id="xi3-oF-HHb"/>
+                    <constraint firstItem="hWd-Gd-i0I" firstAttribute="bottom" secondItem="4gs-BJ-um4" secondAttribute="bottom" id="yeH-Gb-Xf8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="insuranceNameLable" destination="4gs-BJ-um4" id="4aQ-Ws-OhU"/>
+                <outlet property="isSelectedInsuranceBtn" destination="Meg-xH-hMw" id="rxd-Wa-l24"/>
+            </connections>
+            <point key="canvasLocation" x="326" y="-95.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check_box_checked.png" width="42" height="42"/>
+    </resources>
+</document>

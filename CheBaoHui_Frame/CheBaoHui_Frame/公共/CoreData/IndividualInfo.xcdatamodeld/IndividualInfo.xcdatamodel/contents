@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 7.0">
+    <entity name="ImageData" representedClassName="ImageData" syncable="YES">
+        <attribute name="competencyPage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="competencyPageId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identityCardFront" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="identityCardFrontId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identityCardVerso" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="identityCardVersoId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identityID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Individual" representedClassName="Individual" syncable="YES">
+        <attribute name="areaName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idCardNoPhoto1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idCardNoPhoto1Url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idCardNoPhoto2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idCardNoPhoto2Url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="individualId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobilePhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nickName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="qCertificatePhoto" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="qCertificatePhotoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="statusName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="validateMsg" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ImageData" positionX="-54" positionY="63" width="128" height="150"/>
+        <element name="Individual" positionX="-54" positionY="-9" width="128" height="300"/>
+    </elements>
+</model>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="624-hM-WcO" customClass="IdCardWithDrvingLicenseCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="624-hM-WcO" id="t53-5g-gX1">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车主身份证" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnZ-ti-gNy">
+                        <rect key="frame" x="10" y="10" width="96" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.13160089159999999" green="0.55666683689999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请按照提示上传身份证" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pN9-ZZ-MoS">
+                        <rect key="frame" x="97" y="10" width="142" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BK2-8P-Dtc">
+                        <rect key="frame" x="10" y="39" width="144" height="101"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="BK2-8P-Dtc" secondAttribute="height" multiplier="143:100" id="0ra-dv-Vgu"/>
+                        </constraints>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWt-x8-e5w">
+                        <rect key="frame" x="164" y="39" width="144" height="101"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="BK2-8P-Dtc" secondAttribute="bottom" constant="1" id="0sS-43-nyo"/>
+                    <constraint firstItem="zWt-x8-e5w" firstAttribute="top" secondItem="BK2-8P-Dtc" secondAttribute="top" id="8Pv-j7-Uew"/>
+                    <constraint firstItem="zWt-x8-e5w" firstAttribute="bottom" secondItem="BK2-8P-Dtc" secondAttribute="bottom" id="DJc-AI-FOR"/>
+                    <constraint firstItem="BK2-8P-Dtc" firstAttribute="width" secondItem="t53-5g-gX1" secondAttribute="width" multiplier="0.45" id="Fyk-ug-979"/>
+                    <constraint firstItem="TnZ-ti-gNy" firstAttribute="width" secondItem="t53-5g-gX1" secondAttribute="width" multiplier="0.3" id="JLr-SM-CVU"/>
+                    <constraint firstItem="TnZ-ti-gNy" firstAttribute="leading" secondItem="t53-5g-gX1" secondAttribute="leadingMargin" constant="2" id="K96-QX-1tG"/>
+                    <constraint firstItem="pN9-ZZ-MoS" firstAttribute="leading" secondItem="TnZ-ti-gNy" secondAttribute="trailing" constant="-9" id="Sgi-wS-Gu8"/>
+                    <constraint firstItem="pN9-ZZ-MoS" firstAttribute="top" secondItem="TnZ-ti-gNy" secondAttribute="top" id="Vys-fp-iI6"/>
+                    <constraint firstItem="zWt-x8-e5w" firstAttribute="width" secondItem="BK2-8P-Dtc" secondAttribute="width" id="coE-QS-TH4"/>
+                    <constraint firstItem="TnZ-ti-gNy" firstAttribute="top" secondItem="t53-5g-gX1" secondAttribute="topMargin" constant="2" id="e2H-cD-0fy"/>
+                    <constraint firstItem="pN9-ZZ-MoS" firstAttribute="bottom" secondItem="TnZ-ti-gNy" secondAttribute="bottom" id="jLc-Tz-B9t"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pN9-ZZ-MoS" secondAttribute="trailing" constant="73" id="psA-ps-gHU"/>
+                    <constraint firstItem="zWt-x8-e5w" firstAttribute="leading" secondItem="BK2-8P-Dtc" secondAttribute="trailing" constant="10" id="si8-Hz-SeZ"/>
+                    <constraint firstItem="BK2-8P-Dtc" firstAttribute="leading" secondItem="TnZ-ti-gNy" secondAttribute="leading" id="u1Y-kV-D6j"/>
+                    <constraint firstItem="BK2-8P-Dtc" firstAttribute="top" secondItem="TnZ-ti-gNy" secondAttribute="bottom" constant="8" id="xXn-yl-SKh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftLabel" destination="TnZ-ti-gNy" id="aCv-XE-B5J"/>
+                <outlet property="particularLabel" destination="pN9-ZZ-MoS" id="fue-ay-vsS"/>
+                <outlet property="positiveUIButton" destination="BK2-8P-Dtc" id="cYh-pl-ySB"/>
+                <outlet property="reverseButton" destination="zWt-x8-e5w" id="QqT-jo-pye"/>
+            </connections>
+            <point key="canvasLocation" x="423" y="287"/>
+        </tableViewCell>
+    </objects>
+</document>

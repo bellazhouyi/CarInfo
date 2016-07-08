@@ -1,0 +1,147 @@
+
+#import <AFNetworking/AFNetworking.h>
+#import <MBProgressHUD.h>
+#import <MagicalRecord/MagicalRecord.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <Mantle/Mantle.h>
+#import <Masonry/Masonry.h>
+#import <UIImageView+WebCache.h>
+
+#import "MJExtension.h"
+#import "Constant.h"
+#import "RefreshControl.h"
+#import "JJUtils.h"
+#import "AppDelegate.h"
+#import "JJHttpClient.h"
+
+
+#import "GiFHUD.h"
+#define kMinute 1.5
+#define kGifHUDDismissInTouBaoFangAn 0.4
+
+
+//引入自己的类
+#import "HomeViewController.h"
+#import "VehicleInformationViewController.h"
+#import "InsuranceProposalViewController.h"
+
+//投保方案中的自定义cell
+#import "BasicCell.h"
+#import "TwoBtnCell.h"
+#import "ThreeBtnCell.h"
+#import "OnlyTwoBtnCell.h"
+
+
+//关于网络请求类
+#import "HTTPManager.h"
+#import "HTTPManagerOfInsurance.h"
+#import "HTTPManagerOfMine.h"
+
+
+#define FailureAboutRequestData @"网络请求失败"
+#define FailureToUpLoadFile @"上传失败"
+#define ToastHideTime 2.0f
+
+//头像
+#define HEADPORTAIT_WIDTH 700
+#define HEADPORTAIT_HEIGHT 700
+
+
+#import "KevinBaseController.h"
+
+//模型类
+#import "CarInfo.h"
+#import "PriceDetail.h"
+#import "Insurance.h"
+
+#import "DBManager.h"
+#import "Individual.h"
+
+#import "SelectDateView.h"
+
+#import "GSIndeterminateProgressView.h"
+
+
+#define transferBtnTag 500
+#define buyDateBtnTag  501
+
+
+//保单配送方式
+//现领
+#define nowWay @"now"
+//代领
+#define behalfWay @"behalf"
+//快递
+#define sendWay @"send"
+
+
+//保单支付方式
+//微信
+#define wechat @"wechat"
+//支付宝
+#define alipay @"alipay"
+//刷卡
+#define cash @"cash"
+
+//银联支付
+#define yinLian @"yl"
+
+//通知中心用于检测是否跳转到自选版的name
+#define toSelfInsuranceTable @"toSelfInsuaranceTableView"
+
+//跳到自选版的字典信息
+#define toSelfInsuranceTableDictionary @{@"isToSelfInsurance":@"YES"}
+
+//不跳到自选版的字典信息
+#define notToSelfInsuranceTableView @{@"isToSelfInsurance":@"NO"}
+
+
+/**
+ *  微信支付appid
+ */
+
+#define wechat_appid @"wx502dd5b3e3c86e69"
+
+
+/**
+ *  微信支付 商户key
+ */
+#define wechat_key  @"6E6D19D4AE074940B2F0485DE87389AC"
+
+
+#define removeDataWhenExit @"exit"
+
+
+#define typeOfDate @"date"
+
+#define typeOfMoney @"money"
+
+
+#define kUIScreenWidth [UIScreen mainScreen].bounds.size.width
+
+#define kUIScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+#define APPDELEGATE     ((AppDelegate*)[[UIApplication sharedApplication] delegate])
+
+
+#import <IQKeyboardManager/KeyboardManager.h>
+
+//Push a ViewController avoiding mone than once
+#define  pushToViewControllerAndTarget(target,VCClassName,targetInstance) if (![target.navigationController.topViewController isKindOfClass:[VCClassName class]]) {[target.navigationController pushViewController:targetInstance  animated:YES];}
+
+
+//Debug & Release 模式
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif
+
+//RGB of 浅蓝色
+#define redValue_QBlue 193
+#define greenValue_QBlue 210
+#define blueValue_QBlue 240
+

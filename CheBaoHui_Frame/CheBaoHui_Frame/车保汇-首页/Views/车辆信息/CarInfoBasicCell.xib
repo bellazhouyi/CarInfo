@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="CarInfoBasicCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="默认默认" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMf-7Y-aSZ">
+                        <rect key="frame" x="10" y="8" width="68" height="33"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入内容" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yhB-yI-wXZ">
+                        <rect key="frame" x="88" y="8" width="224" height="33"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="topMargin" secondItem="FMf-7Y-aSZ" secondAttribute="top" id="3Bl-QQ-S0o"/>
+                    <constraint firstItem="yhB-yI-wXZ" firstAttribute="bottom" secondItem="FMf-7Y-aSZ" secondAttribute="bottom" id="A1c-Kh-tCy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="FMf-7Y-aSZ" secondAttribute="bottom" id="GCf-pG-gTr"/>
+                    <constraint firstItem="yhB-yI-wXZ" firstAttribute="top" secondItem="FMf-7Y-aSZ" secondAttribute="top" id="HOR-oI-o82"/>
+                    <constraint firstItem="FMf-7Y-aSZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="M8k-d2-zym"/>
+                    <constraint firstItem="yhB-yI-wXZ" firstAttribute="leading" secondItem="FMf-7Y-aSZ" secondAttribute="trailing" constant="10" id="wUW-Ar-36h"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="yhB-yI-wXZ" secondAttribute="trailing" id="wys-zg-te6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="FMf-7Y-aSZ" id="Sh5-Sd-YSk"/>
+                <outlet property="valueTextField" destination="yhB-yI-wXZ" id="nB6-Qn-c4Q"/>
+            </connections>
+            <point key="canvasLocation" x="238" y="116"/>
+        </tableViewCell>
+    </objects>
+</document>

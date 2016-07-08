@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gHj-T6-z1o" customClass="InsureDeliveryUIView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2MQ-uy-B15" userLabel="line">
+                    <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ijp-Sl-8te"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="保单配送" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWU-rw-EmG">
+                    <rect key="frame" x="10" y="10" width="68" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.13160089159999999" green="0.55666683689999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uak-hn-WXb">
+                    <rect key="frame" x="78" y="0.0" width="242" height="44"/>
+                    <subviews>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUa-tb-7tb" customClass="RadioButton">
+                            <rect key="frame" x="87" y="10" width="77" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="03k-6S-jtv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="6" minY="2" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="代领" image="unchecked">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="checked">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onRadioBtn:" destination="gHj-T6-z1o" eventType="touchUpInside" id="VnY-1Z-Our"/>
+                                <outletCollection property="groupButtons" destination="rkl-aX-PSM" id="cjG-cC-8LS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkl-aX-PSM" customClass="RadioButton">
+                            <rect key="frame" x="164" y="10" width="78" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="E3I-Xr-st8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="6" minY="2" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="快递" image="unchecked">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="checked">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onRadioBtn:" destination="gHj-T6-z1o" eventType="touchUpInside" id="Cze-5v-9h6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pB9-5J-Uhi" customClass="RadioButton">
+                            <rect key="frame" x="10" y="10" width="78" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="KLv-ra-Cv4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="6" minY="2" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="现领" image="unchecked">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="checked">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onRadioBtn:" destination="gHj-T6-z1o" eventType="touchUpInside" id="PD8-z6-JmQ"/>
+                                <outletCollection property="groupButtons" destination="tUa-tb-7tb" id="HlJ-eH-9kn"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Lf-Zd-PBP" userLabel="line">
+                            <rect key="frame" x="0.0" y="43" width="242" height="1"/>
+                            <color key="backgroundColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="dCN-nw-hpi"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="pB9-5J-Uhi" firstAttribute="leading" secondItem="Uak-hn-WXb" secondAttribute="leading" constant="10" id="2KH-Uz-FD3"/>
+                        <constraint firstAttribute="trailing" secondItem="1Lf-Zd-PBP" secondAttribute="trailing" id="7LV-bl-mjp"/>
+                        <constraint firstItem="tUa-tb-7tb" firstAttribute="centerY" secondItem="Uak-hn-WXb" secondAttribute="centerY" id="AVV-Th-TSt"/>
+                        <constraint firstItem="rkl-aX-PSM" firstAttribute="centerY" secondItem="Uak-hn-WXb" secondAttribute="centerY" id="AhF-BW-iMp"/>
+                        <constraint firstAttribute="trailing" secondItem="rkl-aX-PSM" secondAttribute="trailing" id="Brg-SL-q9Q"/>
+                        <constraint firstItem="tUa-tb-7tb" firstAttribute="top" secondItem="pB9-5J-Uhi" secondAttribute="top" id="E0U-Bi-RhL"/>
+                        <constraint firstItem="pB9-5J-Uhi" firstAttribute="centerY" secondItem="Uak-hn-WXb" secondAttribute="centerY" id="G8S-XV-1K8"/>
+                        <constraint firstItem="rkl-aX-PSM" firstAttribute="top" secondItem="Uak-hn-WXb" secondAttribute="top" constant="11" id="KDA-Lr-W0m"/>
+                        <constraint firstItem="1Lf-Zd-PBP" firstAttribute="leading" secondItem="Uak-hn-WXb" secondAttribute="leading" id="WHv-Tg-oDa"/>
+                        <constraint firstAttribute="bottom" secondItem="1Lf-Zd-PBP" secondAttribute="bottom" id="WYh-Ly-5Vh"/>
+                        <constraint firstItem="tUa-tb-7tb" firstAttribute="leading" secondItem="pB9-5J-Uhi" secondAttribute="trailing" id="X5W-UE-gtD"/>
+                        <constraint firstItem="tUa-tb-7tb" firstAttribute="width" secondItem="rkl-aX-PSM" secondAttribute="width" id="ca8-Ol-p2r"/>
+                        <constraint firstItem="pB9-5J-Uhi" firstAttribute="width" secondItem="tUa-tb-7tb" secondAttribute="width" id="l5l-Dw-SEw"/>
+                        <constraint firstItem="rkl-aX-PSM" firstAttribute="leading" secondItem="tUa-tb-7tb" secondAttribute="trailing" id="nd0-qH-rdQ"/>
+                        <constraint firstItem="tUa-tb-7tb" firstAttribute="centerY" secondItem="Uak-hn-WXb" secondAttribute="centerY" id="tlP-6c-TR7"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="KDA-Lr-W0m"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2MQ-uy-B15" secondAttribute="trailing" id="0iq-KE-Yif"/>
+                <constraint firstItem="dWU-rw-EmG" firstAttribute="top" secondItem="gHj-T6-z1o" secondAttribute="top" constant="10" id="B95-5o-vHy"/>
+                <constraint firstItem="dWU-rw-EmG" firstAttribute="leading" secondItem="gHj-T6-z1o" secondAttribute="leading" constant="10" id="EfA-U0-for"/>
+                <constraint firstAttribute="trailing" secondItem="Uak-hn-WXb" secondAttribute="trailing" id="J4z-92-dvF"/>
+                <constraint firstAttribute="bottom" secondItem="2MQ-uy-B15" secondAttribute="bottom" id="KOa-er-mah"/>
+                <constraint firstItem="Uak-hn-WXb" firstAttribute="top" secondItem="gHj-T6-z1o" secondAttribute="top" id="Lnk-fH-M9s"/>
+                <constraint firstItem="2MQ-uy-B15" firstAttribute="leading" secondItem="gHj-T6-z1o" secondAttribute="leading" id="q3T-rY-YBC"/>
+                <constraint firstAttribute="bottom" secondItem="dWU-rw-EmG" secondAttribute="bottom" constant="10" id="qaX-U7-uED"/>
+                <constraint firstItem="Uak-hn-WXb" firstAttribute="leading" secondItem="dWU-rw-EmG" secondAttribute="trailing" id="sLG-gC-XvM"/>
+                <constraint firstAttribute="bottom" secondItem="Uak-hn-WXb" secondAttribute="bottom" id="xog-M1-QVm"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="radioButton" destination="pB9-5J-Uhi" id="iM6-79-eAo"/>
+            </connections>
+            <point key="canvasLocation" x="307" y="338"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checked" width="24" height="24"/>
+        <image name="unchecked" width="24" height="24"/>
+    </resources>
+</document>

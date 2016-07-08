@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="TwoLabelCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eem-RT-OVP">
+                        <rect key="frame" x="28" y="8" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cu1-KM-wT0">
+                        <rect key="frame" x="48" y="8" width="0.0" height="0.0"/>
+                        <color key="backgroundColor" red="0.55144230769230762" green="0.55144230769230762" blue="0.55144230769230762" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jd0-Fe-jkr">
+                        <rect key="frame" x="306" y="8" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Cu1-KM-wT0" firstAttribute="leading" secondItem="eem-RT-OVP" secondAttribute="trailing" constant="20" id="2vl-aV-WD0"/>
+                    <constraint firstItem="Cu1-KM-wT0" firstAttribute="bottom" secondItem="eem-RT-OVP" secondAttribute="bottom" id="8bf-LM-Wy4"/>
+                    <constraint firstItem="jd0-Fe-jkr" firstAttribute="top" secondItem="Cu1-KM-wT0" secondAttribute="top" id="9Yh-bq-rop"/>
+                    <constraint firstItem="eem-RT-OVP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="BuB-Ro-Rs3"/>
+                    <constraint firstItem="eem-RT-OVP" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3" id="Pzv-5J-iXa"/>
+                    <constraint firstItem="jd0-Fe-jkr" firstAttribute="bottom" secondItem="Cu1-KM-wT0" secondAttribute="bottom" id="a4L-pO-o80"/>
+                    <constraint firstItem="eem-RT-OVP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="eIb-Um-3yc"/>
+                    <constraint firstItem="Cu1-KM-wT0" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.25" id="g1g-Ec-WFs"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jd0-Fe-jkr" secondAttribute="trailing" constant="6" id="hUn-1a-hwT"/>
+                    <constraint firstItem="jd0-Fe-jkr" firstAttribute="leading" secondItem="Cu1-KM-wT0" secondAttribute="trailing" constant="10" id="mFF-mP-uMR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jd0-Fe-jkr" secondAttribute="trailing" constant="6" id="mzU-Kv-5ah"/>
+                    <constraint firstItem="Cu1-KM-wT0" firstAttribute="top" secondItem="eem-RT-OVP" secondAttribute="top" id="zB2-9b-CV4"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Pzv-5J-iXa"/>
+                        <exclude reference="g1g-Ec-WFs"/>
+                        <exclude reference="hUn-1a-hwT"/>
+                        <exclude reference="mFF-mP-uMR"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="insuranceNameLabel" destination="eem-RT-OVP" id="h8l-Sc-lB0"/>
+                <outlet property="insurancePriceLabel" destination="Cu1-KM-wT0" id="ufX-Nm-4fA"/>
+                <outlet property="insuranceValueLabel" destination="jd0-Fe-jkr" id="WvW-DZ-t3P"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="139"/>
+        </tableViewCell>
+    </objects>
+</document>
